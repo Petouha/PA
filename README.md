@@ -173,14 +173,14 @@ public:
 
 class Circle : public Shape {
 public:
-    void draw() const  {  // Redéfinition
+    void draw() const override{  // Redéfinition
         std::cout << "Drawing a circle" << std::endl;
     }
 };
 
 class Rectangle : public Shape {
 public:
-    void draw() const  {
+    void draw() const override {
         std::cout << "Drawing a rectangle" << std::endl;
     }
 };
